@@ -38,6 +38,13 @@ form button
     background: #FECFEF;
     color: #7F72A5;
     text-align: center;
+    
+
+}
+form input:focus
+{
+    outline: none !important;
+    
 }
 form button
 {
@@ -169,3 +176,20 @@ select {
     padding-left: 6px;
     justify-content: center;
    }
+
+@media (max-width: 376px)
+{
+    header
+    {   
+        font-size: 1rem;
+        justify-content: left;
+    }
+
+    form input,
+    form button
+    {
+    padding: 0.2rem;
+    font-size: 1rem;
+    display: flex;
+    }
+}
