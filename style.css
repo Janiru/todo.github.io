@@ -93,6 +93,14 @@ form button:hover
 {
     background: #F08DAE;
 }
+.complete-btn:hover
+{
+    background: #e97da1;
+}
+.trash-btn:hover
+{
+    background: #8f527f;
+}
 .todo-item
 {
     padding: 0rem 0.5rem;
@@ -157,7 +165,7 @@ select option
     font-size: 17px;
 }
 select {
-    font-size:19px;
+    font-size:17px;
     padding-left: 6px;
     justify-content: center;
    }
