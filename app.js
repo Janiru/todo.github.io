@@ -7,8 +7,11 @@ todoButton.addEventListener('click', addTo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
 
+
+
     function addTo(event){
 
+        
         event.preventDefault()                                                                                                          
         //to do div
         const todoDiv =  document.createElement('div');
@@ -32,7 +35,9 @@ filterOption.addEventListener('click', filterTodo);
         todoDiv.appendChild(trashButton);
 
         //Append list
-        todoList.appendChild(todoDiv); 
+        if(!todoInput.value == ""){
+            todoList.appendChild(todoDiv); 
+        }
         
         todoInput.value = "";
     }
@@ -48,6 +53,7 @@ function deleteCheck(e){
       todo.classList.add("fall");
       todo.addEventListener('transitionend', function(){
         todo.remove();
+    
       });     
       
   }
