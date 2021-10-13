@@ -197,3 +197,17 @@ select {
     display: flex;
     }
 }
+
+/** background mode toggler css**/
+.bg-toggler {
+     margin-top: 15px;
+     margin-right: 12px;
+     position:absolute;
+     top:0;
+     right:0;
+}
+
+.dark-mode {
+  background-color: white;
+  color: white;
+}
