@@ -7,12 +7,12 @@
 
 body
 {
-    background:#191919;
+    background:black;
     font-family: 'Poppins', sans-serif;
     min-width: 100vh;
 }
 body header h1{
-    color: #dd6418;
+    color: white;
     ;          
 }
 
@@ -38,7 +38,7 @@ form button
     font-weight: 500;
     border: none;
     background: #474747;
-    color: #919191;
+    color: white;
     text-align: center;
     
 
@@ -50,8 +50,8 @@ form input:focus
 }
 form button
 {
-    color: rgb(122 61 0);
-    background: #c15511;
+    color: #474747;
+    background: white;
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -59,7 +59,7 @@ form button
 form button:hover
 {
     background: #474747;
-    color: #d46a28;
+    color: white;
 }
 .todo-container
 {
@@ -76,7 +76,7 @@ form button:hover
 {
     margin: 0.5rem;
     background: #474747;
-    color: #919191;
+    color: white;
     text-align: center;
     font-size: 1.5rem;
     display: flex;
@@ -91,7 +91,7 @@ form button:hover
 .trash-btn, .complete-btn
 {
     background: #481c00;
-    color: #e76311;
+    color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
@@ -101,7 +101,7 @@ form button:hover
 .complete-btn
 {
     background: #e76311;
-    color: #515151;
+    color: white;
 }
 .complete-btn:hover
 {
@@ -148,7 +148,7 @@ select
 select 
 {
     background: #474747;
-    color: #919191;
+    color: white;
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
@@ -157,8 +157,8 @@ select
 {
     content: "\25BC";
     position: absolute;
-    color: rgb(122 61 0);
-    background: #c15511;
+    color: #474747;
+    background: white;
     top: 0;
     right: 0;
     padding: 1rem;
@@ -169,7 +169,7 @@ select
 .select:hover::after
 {
     background: #474747;
-    color: #d36926;
+    color: white;
 }
 select option
 {
