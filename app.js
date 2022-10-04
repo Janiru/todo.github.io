@@ -2,12 +2,20 @@ const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');     
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
+const themeBtn = document.getElementById('theme')
 
 todoButton.addEventListener('click', addTo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
 
-
+themeBtn.addEventListener('click',()=>{
+ 
+    if (document.documentElement.getAttribute("data-theme")!=="dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })
 
     function addTo(event){
 
