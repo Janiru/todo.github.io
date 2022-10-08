@@ -10,6 +10,104 @@
     --form-font: #191919;
 }
 
+body{
+    overflow: hidden;
+}
+
+
+@keyframes left {
+    0%{
+        opacity: 0;
+        transform: translateX(-60rem);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+
+    }
+    
+}
+@keyframes right{
+    0%{
+        opacity: 0;
+        transform: translateX(60rem);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+
+    }
+    
+}
+@keyframes left {
+    0%{
+        transform: translateX(-60rem);
+
+    }
+
+    100%{
+        transform: translateX(0rem);
+
+    }
+    }
+    
+@keyframes down {
+    0%{
+        transform: translateY(-20rem);
+
+    }
+
+    100%{
+        transform: translateY(0rem);
+
+    }
+    
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+*::selection{
+    background-color: #dd6418;
+    color:white;
+}
+
+.message{
+    color:white;
+    background-color: #e480415b;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 30rem;
+    padding: 1rem 4rem;
+    border-radius: 4px;
+    transform: translateY(6rem);
+    /* transition: all 0.2s ease; */
+
+}
+
+.left{
+    animation: left 0.8s cubic-bezier(.77,.11,.59,1.71)  1  forwards;
+}
+.right{
+    animation: right 0.8s cubic-bezier(.77,.11,.59,1.71)  1  forwards;
+}
+.down{
+    animation:down 0.8s ease  1  forwards;
+}
+.appear{
+    animation:appear 0.8s cubic-bezier(.63,.31,.66,-0.31)  1;
+}
 .toggle-theme{
     position: fixed;
     right: 50px;

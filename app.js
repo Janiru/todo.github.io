@@ -3,10 +3,13 @@ const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
 const themeBtn = document.getElementById('theme')
+const message =  document.querySelector(".message");
 
 todoButton.addEventListener('click', addTo);
 todoList.addEventListener('click', deleteCheck);
 filterOption.addEventListener('click', filterTodo);
+
+
 
 themeBtn.addEventListener('click',()=>{
  
@@ -18,8 +21,7 @@ themeBtn.addEventListener('click',()=>{
   })
 
     function addTo(event){
-
-        
+       
         event.preventDefault()                                                                                                          
         //to do div
         const todoDiv =  document.createElement('div');
@@ -44,9 +46,12 @@ themeBtn.addEventListener('click',()=>{
 
         //Append list
         if(!todoInput.value == ""){
+           message.style.opacity = 0;
             todoList.appendChild(todoDiv); 
         }
         
+         
+       
         todoInput.value = "";
     }
 
@@ -61,6 +66,9 @@ function deleteCheck(e){
       todo.classList.add("fall");
       todo.addEventListener('transitionend', function(){
         todo.remove();
+        if(todoList.innerHTML==''){
+           message.style.opacity = 1;
+        }
     
       });     
       
