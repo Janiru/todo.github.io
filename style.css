@@ -2,12 +2,18 @@
     --bg-color: #191919;
     --form-bg: #474747;
     --form-font: #919191;
+    --button-bg:#c15511;
+    --button-border:#c15511;
+    --button-color:rgb(122 61 0);
 }
 
 [data-theme="light"]{
     --bg-color: #fff;
     --form-bg: #d9dddf;
     --form-font: #191919;
+    --button-bg:#fff;
+    --button-border:#191919;
+    --button-color:#191919;
 }
 
 .toggle-theme{
@@ -16,15 +22,16 @@
     bottom: 50px;
     width: 50px;
     height: 50px;
-    background-color: #c15511;
+    background-color: var(--button-bg);
     border-radius: 50px;
     display: grid;
     place-items: center;
     cursor: pointer;
+    border:2px solid var(--button-border);
 }
 
 .toggle-theme .fas{
-    color: rgb(122 61 0);
+    color: var(--button-color);
     font-size: 22px;
 }
 
@@ -73,6 +80,9 @@ form button
     text-align: center;
     
 
+}
+.todo-input{
+    border:1px solid #c15511;
 }
 form input:focus
 {
