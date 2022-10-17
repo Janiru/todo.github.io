@@ -50,7 +50,7 @@ body
     height: 100vh;
 }
 body header h1{
-    color: #dd6418;
+    color: #00bfc2;
     ;          
 }
 
@@ -82,7 +82,7 @@ form button
 
 }
 .todo-input{
-    border:1px solid #c15511;
+    border:1px solid #00bfc2;
 }
 form input:focus
 {
@@ -91,8 +91,8 @@ form input:focus
 }
 form button
 {
-    color: rgb(122 61 0);
-    background: #c15511;
+    color: #004f7a;
+    background: #00bfc2;
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -132,7 +132,7 @@ form button:hover
 .trash-btn, .complete-btn
 {
     background: #481c00;
-    color: #e76311;
+    color: #00bfc2;
     border: none;
     padding: 1rem;
     cursor: pointer;
@@ -142,7 +142,7 @@ form button:hover
 .complete-btn
 {
     background: #e76311;
-    color: #515151;
+    color: #00bfc2;
 }
 .complete-btn:hover
 {
