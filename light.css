@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background:rgb(255, 254, 254);
+    font-family: 'Poppins', sans-serif;
+    min-width: 100vh;
+}
+body header h1{
+    color: #dd6418;
+    ;          
+}
+
+header
+{
+    font-size: 1.5rem;
+}
+header,
+form
+{ 
+    min-height: 20vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form input,
+form button
+{
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+    background: #c9c9c9;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    
+
+}
+form input:focus
+{
+    outline: none !important;
+    
+}
+form button
+{
+    color: rgb(113, 56, 0);
+    background: #e76311;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+form button:hover
+{
+    background: #c9c9c9;
+    color: #d46a28;
+}
+.todo-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list
+{
+    min-width: 30%;
+    list-style: none;
+}
+.todo
+{
+    margin: 0.5rem;
+    background: #c9c9c9;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 500ms ease;    
+}
+.todo li
+{
+    flex: 1;
+}
+.trash-btn, .complete-btn
+{
+    background: #3d1700;
+    color: #df5601;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+        
+}
+.complete-btn
+{
+    background: #e76311;
+    color: rgb(113, 56, 0);
+}
+.complete-btn:hover
+{
+    background: rgb(204, 89, 17);
+    
+}
+.trash-btn:hover
+{
+    background: #c9c9c9;
+}
+.todo-item
+{
+    padding: 0rem 0.5rem;
+}
+.fa-trash, .fa-check
+{
+    pointer-events: none;
+}
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall
+{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     outline: none;
+     border: none;
+}
+.select
+{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;    
+}
+select 
+{
+    background: #c9c9c9;
+    color: rgb(30, 30, 30);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.select::after
+{
+    content: "\25BC";
+    position: absolute;
+    color: rgb(122 61 0);
+    background: #e76311;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after
+{
+    background: #c9c9c9;
+    color: #d36926;
+}
+select option
+{
+    font-size: 17px;
+}
+select {
+    font-size:17px;
+    padding-left: 6px;
+    justify-content: center;
+   }
+
+@media (max-width: 376px)
+{
+    header
+    {   
+        font-size: 1rem;
+        justify-content: left;
+    }
+
+    form input,
+    form button
+    {
+    padding: 0.2rem;
+    font-size: 1rem;
+    display: flex;
+    }
+}
